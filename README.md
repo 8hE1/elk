@@ -1,8 +1,6 @@
 # Elk: a tiny JS engine for embedded systems
 
-[![Build Status](https://github.com/cesanta/elk/workflows/build/badge.svg)](https://github.com/cesanta/elk/actions)
-[![License: AGPL/Commercial](https://img.shields.io/badge/License-AGPL%20or%20Commercial-green.svg)](https://opensource.org/licenses/gpl-2.0.php)
-[![Code Coverage](https://codecov.io/gh/cesanta/elk/branch/master/graph/badge.svg)](https://codecov.io/gh/cesanta/elk)
+[![License: AGPL](https://img.shields.io/badge/License-AGPL-green.svg)](https://opensource.org/licenses/gpl-2.0.php)
 
 
 Elk is a tiny embeddable JavaScript engine that implements a small but usable
@@ -102,13 +100,13 @@ int main(void) {
 - Every statement must end with a semicolon `;`
 - Strings are binary data chunks, not Unicode strings: `'Київ'.length === 8`
 
-## Not supported features
+## TODO List
 
-- No `var`, no `const`. Use `let` (strict mode only)
-- No `do`, `switch`, `while`. Use `for`
-- No `=>` functions. Use `let f = function(...) {...};`
-- No arrays, closures, prototypes, `this`, `new`, `delete`
-- No standard library: no `Date`, `Regexp`, `Function`, `String`, `Number`
+- `var`, `const`
+- `do`, `switch`, `while`
+- `=>` functions
+- arrays, closures, prototypes, `this`, `new`, `delete`
+- `Date`, `Regexp`, `Function`, `String`, `Number` library
 
 ## Performance
 
@@ -288,5 +286,4 @@ Print debug info about the current JS state to stdout. Requires `-DJS_DUMP`
 
 ## LICENSE
 
-Dual license: AGPLv3 or commercial. For commercial licensing, technical support
-and integration help, please contact us at https://cesanta.com/contact.html
+AGPLv3.
